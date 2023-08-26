@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Css</title>
+
+    <style>
+                                                    /*--Type Selector  apita one tag ekek selct kargana use karne --*/
+
+    /*   h1{
+            color: red;
+        }
+        p{
+            background-color: yellow;
+        }*/
+
+                                                    /*--Id Selector  elements valata id ekek dila ewat withrk css danan meke use karne --*/
+      /*  #subtopic01,#subtopic02{
+            color: blue;
+        }*/
+
+                                                    /*--Class Selector  class name ekek dila ewata withrk waten use karne --*/
+
+        /*    .myCss{
+                color: blue;
+                background-color: yellow;
+            }*/
+
+           /*   .frontCss{
+                  font-weight: bold;
+                  font-family: Algerian;
+              }*/
+
+                                                    /*--Universal Selector    page ekek okotma ekek para eka css ekek danan use karne--*/
+            /*    *{
+                    color: red;
+                }*/
+
+                                                    /*--Attribute Selector  attribute ekek dila e haraha css denwa e attribute eke namin tiyene ewata*/
+             /*     [name]{
+                      color: red;
+                  }*/
+
+                 /*  [href]{
+                       background-color: red;
+                   }*/
+                                                    /*--Attribute value Selector attribute ekek value eka harha css set karnwa*/
+              /*    [name=html] {
+                      font-weight: bold;
+                      font-family: Arial;
+                  }*/
+
+                                                    /*--Attribute Selector  With Starting  Value
+                                                    attribute ektd dila tiyene value ekek start wenen me value eken nm me css ekek aply karna kiyala kiyane*/
+
+               /*     [href ^="https"] {
+                        background-color: lightgreen;
+                    }*/
+
+                   /*    [href ^="http"]    {
+                           background-color: lightgreen;
+                       }*/
+
+                                                    /*--Attribute Selector  With Ending  Value
+                                                    attribute ekek tiyene value ekek e dene value ekekn end wenwa nm me css ekeke aply wne kiyane
+                                                     */
+                   /*    [href $= ".lk"]{
+                           background-color: lightgreen;
+                       }*/
+
+                                                    /*--Attribute Selector  With given values snippets
+                                                         attribute ekek tiyene value ekea kohem hari tankt tiyenwa nm css apply karn kiyane
+                                                          */
+
+                  /*     [href *="https"] {
+                           background-color: lightgreen;
+                       }*/
+
+                                                    /*--Attribute Selector  With given values Word
+                                                    Attribute eke value eke word ekak widiyat wen wela tiyene one hariyata hoyagen eket css apply wenwa
+                                                     */
+
+                  /*      [href ~= "students"]{
+                            background-color: red;
+                        }*/
+
+                                                    /*--Attribute Selector  With type selector*/
+
+
+                           /*li[name="google"]{*/
+                           /*background-color: red;*/
+                           /*}*/
+
+
+                                                    /*--Attribute Selector  With class selector*/
+
+                          /*.myCss[name]{*/
+                          /*    background-color: yellow;*/
+                          /*}*/
+
+
+
+                                                    /*////////////////////  Pseudo Selectors //////////////////*/
+
+
+                  /*-- (1) Pseudo-Class Selectors (:)  class selelctor eken wne status wagy ewat apply karnwa
+                  ex--buuton ekek prees karana kalin tiyene colur eki button ekek press karaat tiyene colur eke wens wena eke apply karan eka  */
+
+
+                  /*-- (2) Pseudo-Element Selectors (::)  element ekek specific part ekekt css add karna eka karne meken*/
+
+
+                             /*---------------------Pseudo-Class Selectors (:)---------------*/
+
+
+                                                    /* :hover */
+                  /*h1:hover{*/
+                  /*    color: red;*/
+                  /*    cursor: pointer;*/
+                  /*}*/
+                                                    /* :active
+                                                    api e element ekea click kardii css ekek apply wenwa
+                                                    */
+
+                /*h1:active{*/
+                /*    color: blue;*/
+                /*}*/
+
+                                                    /* :visited
+                                                        link ekekin api visit  kalnm api  ekt visit kal kiyala pennwa
+                                                        giyat pasee style apply wenwa
+                                                     */
+                /*a:visited{*/
+                /*    color: red;*/
+                /*}*/
+
+                                                    /* :link
+                                                        visit karla nathi link walt apply karna meke tiyene
+                                                     */
+               /*a:link{*/
+               /*    color: lightgreen;*/
+               /*}*/
+
+                                                    /* :focus
+                                                        api moka hari click kalama ekat css apply wenwa
+                                                     */
+             /*input:focus{*/
+             /*    background-color: red;*/
+             /*}*/
+                                                    /* :first-child select fist element
+                                                    meken wene list wala tiyene first child ta css apply karna kiyane
+                                                     */
+             /*li:first-child{*/
+             /*    font-weight: bold;*/
+             /*}*/
+
+                                                    /* :last-child select last element
+                                                    meken wene list eke ina last child ta css apply karna kiyane
+                                                 *!*/
+
+             /*li:last-child{*/
+             /*    color: red;*/
+             /*}*/
+
+             /*                                       !* :nth-child(n) - select any element*/
+             /*                                      meken wene apit one elelment ekek number ekek dala ekek select karla ekt css apply karna puluwan*/
+             /*                                        *!*/
+             /*li:nth-child(3){*/
+             /*    color: yellow;*/
+             /*}*/
+
+             /*h3:nth-child(1){*/
+             /*    color: blueviolet;*/
+             /*}*/
+
+             /*h4:nth-child(2){*/
+             /*    color: blueviolet;*/
+             /*}*/
+
+             /*h4:nth-last-child(2){ !*last child balne yata idan udat balal e adala element ekt css apply karne*!*/
+             /*    color: aqua;*/
+             /*}*/
+
+             /*h4:nth-child(1){ !* child balne uda idan yatat balal e adala element ekt css apply karne*!*/
+             /*    color: coral;*/
+             /*}*/
+
+
+                                                    /* :only-child - select any element
+                                                        list ekakak eka element ekek withrk tiyenm css applay karna kiyane
+             /*                                        *!*/
+             /*li:only-child{*/
+             /*    color: cornflowerblue;*/
+             /*}*/
+
+
+
+                                   /*---------------------Pseudo-Element Selectors (::)---------------*/
+
+                                                    /* ::before
+
+                                                     */
+                h1::before{
+                    content:"👋🥱🥺";
+                }
+
+                                                    /* ::after
+
+                                                     */
+                h1::after{
+                    content: "🙄😒";
+                }
+
+                                                    /* ::first-letter
+                                                    ape element eke first letter ekt css apply wenawa
+                                                     */
+                h3::first-letter{
+                    color: red;
+                }
+
+                                                    /* ::first-line
+                                                    paragraph ekek first line ekeat css apply wenwa meken
+                                                     */
+
+                p::first-line{
+                    color: red;
+                }
+
+                                                    /* ::placeholder*/
+                input::placeholder{
+                    color: indianred;
+                }
+
+                                                    /* ::file-selector-button*/
+                input::file-selector-button{
+                    color: red;
+                    background-color: black;
+                    font-weight: bold;
+                }
+
+                                                    /* ::element selectors
+
+                                                                                     */
+
+                input::file-selector-button:hover{
+                background-color: red;
+
+                }
+
+
+
+
+                                                    /* ::selection
+                                                    web ekak paragraph select kargen yadii colur ekek set karne meken
+                                                    */
+                ::selection{
+                    background-color: black;
+                    color: white;
+                }
+
+                                                    /* ::marker
+                                                    meka hamtiseme wada karne list ekakth eka e list wala tiyene content
+                                                     walt dana one log ekek wagy set karn tama meka tiyen
+                                                     */
+
+                 ::marker{
+                     content: "🔷";
+                 }
+
+
+                                                    /* grouping selectors
+                                                    element kihipayak ekt group karla eka para style class ekak apply karna use karne
+                                                    */
+
+                 h3,h4{
+                     color: black;
+                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+
+<h1>Internet Technologies</h1>
+<section>
+<h4>IJSE</h4>
+<h4>IJSE</h4>
+<h4>IJSE</h4>
+<h4>IJSE</h4>
+</section>
+
+
+<a href="http://google.com">Google</a>
+<a href="https://ibm.com" name="css">Ibm</a>
+<a href="https://ijse.lk">IJSE</a>
+<a href="https://ijsestudents.lkhttps">IJSE Students</a>
+<a href="https://ijse students .lk">IJSE Students 2</a>
+
+<h3 id="subtopic01">Content</h3>
+<ol>
+    <li name="google">HTML</li>
+    <li>CSS
+        <ol>
+            <li>Introduction Css</li>
+            <li>History of Css</li>
+            <li>CSS Rules</li>
+            <li>CSS Selectors</li>
+            <li>Other CSS Topics</li>
+        </ol>
+    <li>Introduction Css</li>
+    </li>
+
+
+    <li>JS</li>
+
+
+
+
+    <section name="html">
+            <h3 id="subtopic02" class="myCss">HTML</h3>
+            <p class="frontCss">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ducimus, et harum minus nesciunt
+                ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+                ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+                ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+            </p>
+    </section>
+
+    <section>
+        <h3 class="myCss" name="css">CSS</h3>
+        <p class="frontCss">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at, aut debitis eius eligendi ex expedita
+            fugiat iure mollitia nulla, obcaecati odit, quae quasi quo ratione rerum similique suscipit ut?
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+        </p>
+    </section>
+
+    <section>
+        <h3 class="myCss">JS</h3>
+
+        <p class="frontCss">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis dolore dolorum est fugiat
+            laborum mollitia, neque nulla praesentium soluta tempore veritatis. Asperiores autem dolor illum nesciunt non saepe totam?
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!
+            ratione vel. Architecto beatae dolore ducimus ipsa modi, mollitia quibusdam, reiciendis rem soluta tempore velit vitae!</p>
+    </section>
+</ol>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+
+
+
+<fieldset>
+    <legend>Contact Us</legend>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="dinil@gmail.com"><br><br>
+
+        <label for="Massage">Massage</label><br>
+        <textarea name="" id="Massage" cols="30" rows="10"></textarea>
+
+
+        <input type="file">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</fieldset>
+
+
+
+
+</body>
+</html>

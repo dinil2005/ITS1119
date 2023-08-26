@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<!-- Input Element-->
+
+    <!-- ///////////////////////   Forms  ///////////////////////// -->
+
+        <input type="button" value="click"><br>
+
+        <input type="checkbox" checked><br>
+        <input type="checkbox"><br>
+
+        <input type="radio"><br>
+
+    <!-- ///////////////////////   Color  ///////////////////////// -->
+
+        <input type="color" >
+        <input type="color" value="#FF0000"><br>
+
+    <!-- ///////////////////////   Date  ///////////////////////// -->
+
+        <input type="date" value="2005-09-09"><br>
+
+    <!-- ///////////////////////   Min Max  ///////////////////////// -->
+
+        <input type="date" value="2023-07-21" min="2023-07-16" max="2023-07-29"><br>
+
+    <!-- ///////////////////////   Date and time  ///////////////////////// -->
+
+        <input type="datetime-local" value="2023-07-23T09:49" ><br>
+
+    <!-- ///////////////////////   Date and time Min Max ///////////////////////// -->
+
+        <input type="datetime-local" value="2023-07-23T09:49"  min="2023-07-02T01:30" max="2023-07-29T12:00"><br>
+
+    <!-- ///////////////////////   Text Felied ///////////////////////// -->
+
+        <input type="text" value="Dinil"><br>
+        <input type="text"><br>
+        <input type="text" placeholder="Enter Your Name"><br>
+
+    <!--///////////////////////  Input Email ////////////////////////// -->
+
+    <input type="email" placeholder="dinil@gmail.com"><br>
+
+    <!--///////////////////////  Url Input ////////////////////////// -->
+
+    <input type="url" placeholder="http//:ijse.lk"><br>
+
+    <!--///////////////////////   Input Mobile number ////////////////////////// -->
+
+    <input type="tel" placeholder="+94 7144XXXXX" pattern="^[A-Z]([a-z]{1,30})?$"><br>
+
+    <!--///////////////////////   Password ////////////////////////// -->
+
+    <input type="password" placeholder="password"><br>
+
+    <!--///////////////////////   Number ////////////////////////// -->
+
+    <input type="number" value="-678"><br>
+    <input type="number" value="Hello World"><br>
+
+    <!-- ///////////////////////   Search ////////////////////////// -->
+
+    <input type="search" placeholder="Search"><br>
+
+    <!-- ///////////////////////   Time ////////////////////////// -->
+
+    <input type="time"><br>
+    <input type="time" value="09:10"><br>
+    <input type="time" value="09:10" min="06:00" max="11:00"><br>
+
+    <!-- ///////////////////////   Week ////////////////////////// -->
+
+    <input type="week"><br>
+    <input type="week" value="2023-W04"><br>
+
+    <!-- ///////////////////////   Month ////////////////////////// -->
+
+    <input type="month"><br>
+    <input type="month" value="2018-02"><br>
+
+    <!-- ///////////////////////  Range ////////////////////////// -->
+
+    <input type="range"><br>
+    <input type="range" value="56"><br>
+
+    <!-- ///////////////////////  File Uplod ////////////////////////// -->
+
+    <input type="file">
+    <input type="image" src="../assets/imges/medium.jpg">
+    <input type="submit">
+
+
+
+
+    <form>
+        <input type="text"><br>
+        <input type="date"><br>
+        <input type="checkbox"><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit">
+    </form>
+
+
+<!-- /////////////////////////// Label Element ///////////////////////////// -->
+<hr>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </form>
+
+<!-- /////////////////////////// Text Area Element  ///////////////////////////// -->
+
+    <label for="adre">Address</label><br>
+    <textarea name="Address" id="adre" cols="30" rows="10"></textarea>
+
+<!-- /////////////////////////// Select Element ///////////////////////////// -->
+
+<label  for="tech">Technlogis</label>
+<select id="tech">
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <opation value="c++">c++</opation>
+</select>
+
+<!-- /////////////////////////// fieldset & legend elements  ///////////////////////////// -->
+
+<fieldset>
+    <legend>Chooes</legend>
+    <input type="radio" id="java">
+    <label for="java">Java</label>
+
+    <input type="radio" id="python">
+    <label for="python">Python</label>
+
+    <input type="radio" id="c++">
+    <label for="c++">C++</label>
+</fieldset>
+
+<br>
+<br>
+<br>
+<!-- /////////////////////////// DATA list element  ///////////////////////////// -->
+
+<label for="country_input">Country</label>
+<input type="text" id="country_input" list="country">
+    <datalist id="country">
+        <option value="Sri lanka">Sri Lanka</option>
+        <option value="Dubai">Dubai</option>
+        <option value="japan">Japan</option>
+    </datalist>
+
+
+<br>
+<br>
+<br>
+<!-- /////////////////////////// Out put element  ///////////////////////////// -->
+ <!--   <input type="range" id="range" value="10"> +
+    <input type="number" id="number" value="20"> -
+    <output>30</output>-->
+
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="range" value="10"> +
+    <input type="number" id="b" name="number" value="20"> =
+    <output name="result">30</output>
+</form>
+
+<!-- /////////////////////////// Option Group  ///////////////////////////// -->
+
+<form>
+    <label for="tech2">Technology</label>
+    <select id="tech2">
+        <optgroup label="Programming Languages">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </optgroup>
+        <optgroup label="Devops">
+            <option value="aws">AWS</option>
+            <option value="azure">Azure</option>
+        </optgroup>
+    </select>
+</form>
+
+</body>
+</html>

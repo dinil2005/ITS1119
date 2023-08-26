@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+
+    <style>
+        #section01{
+            width: 1000px;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section>div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+
+
+        section>div{
+            box-shadow: #2c3e50;
+        }
+    /*parentge atule ina childrenla ina one mona flex ekd kiyala mewa wene flex eken*/
+        /*flex dereaction defualt ene row widiyat*/
+
+        section>div:first-child{
+            background-color: red;
+        }
+
+        section>div:nth-child(2){
+            background-color: #1abc9c;
+        }
+        section>div:nth-child(3){
+            background-color: yellow;
+        }
+
+
+        section>div:nth-child(4){
+            background-color: purple;
+        }
+
+        section>div:nth-child(5){
+            background-color:orange;
+        }
+
+        section>div:nth-child(6){
+            background-color: yellow;
+        }
+
+        #section02{
+            margin-top: 10px;
+            width: 1000px;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            /*justify-content: center;*/
+            justify-content: flex-end;
+
+
+            /*display flex tiyene welwak chiledw center kargana puluwana wiidyak meka*/
+        }
+
+        #section03{
+            margin-top: 10px;
+            width: 1000px;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+
+            /*justify-content: center;*/
+            /*justify-content: space-around;*/
+            justify-content: space-between;
+            /*mekene wene elemnt ather space ekek hadnwa*/
+
+
+            /*display flex tiyene welwak chiledw center kargana puluwana wiidyak meka*/
+
+        }
+
+        #section04{
+            margin-top: 10px;
+            width: 1000px;
+            height: 250px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+            /*justify-content: center;*/
+            /*justify-content: space-around;*/
+
+            /*mekene wene elemnt ather space ekek hadnwa*/
+
+
+            /*display flex tiyene welwak chiledw center kargana puluwana wiidyak meka*/
+
+        }
+
+        #section04>div:first-child{
+            align-self: start;
+        }
+        #section04>div:nth-child(3){
+            align-self: end;
+
+        }
+        #section04>div:nth-child(2){
+            align-self: center;
+        }
+
+        #section04>div:nth-child(4){
+            align-self: center;
+        }
+
+        #section04>div:nth-child(6){
+            align-self: center;
+        }
+
+
+        #section03>div:nth-child(2){
+            align-self: center;
+        }
+
+        #section03>div:nth-child(3){
+            align-self: end;
+        }
+    </style>
+
+</head>
+<body>
+
+<section id="section01">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>
+
+<section id="section02">
+    <div>A</div>
+</section>
+
+
+<section id="section03">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>
+
+
+
+
+
+
+<section id="section04">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--////////////////////////// adding Images ///////////////////////////// -->
+<!--
+<img
+        src="../assets/imges/large.jpg"
+        TITLE="iphone 14 pro" alt="iphone"
+        width="500"
+>
+-->
+
+<!--////////////////////////// adding  responsive Images ///////////////////////////// -->
+
+<!--
+<img
+        srcset="../assets/imges/small.jpg.jpg 480w,../assets/imges/medium.jpg 800w"
+        sizes="(max-width: 1000px) 800px, (max-width: 500px) 480x"
+        src="../assets/imges/large.jpg"
+        TITLE="I phone 14 pro" alt="Iphone"
+>
+-->
+
+<!--/////////////////////Picture Tag////////////////////////////////////////////////////  image represent-->
+<!--
+<picture>
+    <source media="(min-width: 1000px)" srcset="../assets/imges/large.jpg">
+    <source media="(min-width: 800px)" srcset="../assets/imges/medium2.jpg">
+    <img src="../assets/imges/small.jpg" alt="Iphone" title="iphone pro max">
+</picture>
+-->
+
+<!--/////////////////////// Adding Videos (Video Element)//////////////////////////////-->
+
+<!--
+<video src="../assets/videos/car.mp4" controls>
+    <p>
+        This Video Not Support This Browser
+    </p>
+</video>
+-->
+
+
+<video autoplay muted
+        LOOP
+        poster="../assets/imges/car-post.png"
+        preload="auto"
+        controls>
+
+    <source src="../assets/videos/car.mp4" type="video/mp4" >
+    <source src="../assets/videos/car.webm" type="video/webm" >
+    <track  label="Arabic" kind="subtitles" src="../assets/videos/subtitles/arabic.vtt" srclang="ar">
+    <track  default label="English" kind="subtitles" src="../assets/videos/subtitles/sample.vtt" srclang="en">
+    <p>
+        Plz Visit www.ijse.lk to watch this video
+    </p>
+</video>
+
+
+<!--///////////////////////////// Add Audios ( Audio Tag)////////////////////////////////////-->
+<!--<audio controls >-->
+<!--    <source src="../assets/audios/audio_file2.mp3" type="audio/mp3">-->
+<!--</audio>-->
+</body>
+</html>
